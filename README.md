@@ -1,14 +1,33 @@
-Welcome to your new dbt project!
+# dbt Fundamentals Project
 
-### Using the starter project
+This repository contains my dbt project built while completing the **dbt Fundamentals (VS Code)** course.  
+The project uses the **jaffle_shop** dataset to demonstrate core dbt concepts such as staging models, marts, references, and documentation.
 
-Try running the following commands:
-- dbt build
+---
 
+## 📌 Project Objective
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+The goal of this project is to transform raw source data into analytics-ready tables using dbt best practices.
+
+What this project covers:
+- dbt project structure
+- Staging and mart models
+- Use of `source()` and `ref()` macros
+- Folder-based model organization
+- Basic transformations and business logic
+- Documentation and lineage
+
+---
+
+## 🗂 Project Structure
+
+```text
+models/
+├── staging/
+│   ├── stg_customers.sql
+│   ├── stg_orders.sql
+│   └── stg_payments.sql
+│
+└── marts/
+    ├── dim_customers.sql
+    └── fct_orders.sql
